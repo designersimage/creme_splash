@@ -1,0 +1,63 @@
+/*
+|--------------------------------------------------
+| Creme Frontend Main Styles
+|--------------------------------------------------
+*/
+
+/*
+|– utils/
+|   |– _variables.scss    // Sass Variables
+|   |– _functions.scss    // Sass Functions
+|   |– _mixins.scss       // Sass Mixins
+*/
+@import './frontend/utils/variables';
+@import './frontend/utils/functions';
+@import './frontend/utils/mixins';
+
+/*
+|– base/
+|   |– _reset.scss        // Reset/normalize
+|   |– _typography.scss   // Typography rules
+*/
+@import './base/typography';
+@import './base/reset';
+
+/*
+|– components/
+|   |– _buttons.scss      // Buttons
+|   |– _cards.scss        // Card
+|   |– _graphs.scss       // Graphs
+|   |– _images.scss       // Images
+|   |– _links.scss        // Links
+*/
+@import './frontend/components/buttons';
+@import './frontend/components/cards';
+@import './frontend/components/graphs';
+@import './frontend/components/images';
+@import './frontend/components/links';
+
+/*
+|– layout/
+|   |– _navigation.scss   // Navigation
+|   |– _grid.scss         // Grid system
+|   |– _header.scss       // Header
+|   |– _footer.scss       // Footer
+|   |– _main.scss         // Main
+|   |– _sidebar.scss      // Sidebar
+|   |– _forms.scss        // Forms
+*/
+@import './frontend/layout/navigation';
+@import './frontend/layout/grid';
+@import './frontend/layout/header';
+@import './frontend/layout/footer';
+@import './frontend/layout/main';
+@import './frontend/layout/sidebar';
+@import './frontend/layout/forms';
+
+/*
+|– pages/
+|   |– _home.scss         // Home specific styles
+|   |– _products.scss     // Products specific styles
+*/
+@import './frontend/pages/home';
+@import './frontend/pages/products';

@@ -1,0 +1,24 @@
+/*
+|--------------------------------------------------
+| Creme Frontend Layout -- Grid
+|--------------------------------------------------
+*/
+
+.main-header {
+    grid-area: header;
+}
+
+.main-content {
+    grid-area: main;
+}
+
+.wrapper {
+    align-items: flex-start;
+    background-color: var(--color-tan);
+    background-image: url('../images/bg_design.png');
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    width: 100%;
+}

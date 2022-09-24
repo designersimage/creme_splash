@@ -1,0 +1,130 @@
+/*
+|--------------------------------------------------
+| Creme Base Styles -- Typography
+|--------------------------------------------------
+*/
+
+/*
+|– imports/
+|   |– Material Icons
+*/
+@import url('https://fonts.googleapis.com/icon?family=Material+Icons+Round|Material+Icons');
+
+/*
+|– fonts/
+|   |– Comfortaa
+|   |– Pacifico
+|   |– Poppins
+|   |– Xscale
+*/
+/* Comfortaa Font Definitions */
+@font-face {
+    font-family: Comfortaa;
+    src: url("../fonts/Comfortaa-Bold.ttf");
+    font-weight: 700;
+}
+@font-face {
+    font-family: Comfortaa;
+    src: url("../fonts/Comfortaa-Light.ttf");
+    font-weight: 300;
+}
+@font-face {
+    font-family: Comfortaa;
+    src: url("../fonts/Comfortaa-SemiBold.ttf");
+    font-weight: 600;
+}
+
+/* Pacifico Font Definitions */
+@font-face {
+    font-family: Pacifico;
+    src: url("../fonts/Pacifico-Regular.ttf");
+    font-weight: 400;
+}
+
+/* Poppins Font Definitions */
+@font-face {
+    font-family: Poppins;
+    src: url("../fonts/Poppins-Regular.ttf");
+    font-style: normal;
+    font-weight: 400;
+}
+@font-face {
+    font-family: Poppins;
+    src: url("../fonts/Poppins-Italic.ttf");
+    font-style: italic;
+    font-weight: 400;
+}
+@font-face {
+    font-family: Poppins;
+    src: url("../fonts/Poppins-SemiBold.ttf");
+    font-style: normal;
+    font-weight: 600;
+}
+@font-face {
+    font-family: Poppins;
+    src: url("../fonts/Poppins-SemiBoldItalic.ttf");
+    font-style: italic;
+    font-weight: 600;
+}
+@font-face {
+    font-family: Poppins;
+    src: url("../fonts/Poppins-Bold.ttf");
+    font-style: normal;
+    font-weight: 700;
+}
+@font-face {
+    font-family: Poppins;
+    src: url("../fonts/Poppins-BoldItalic.ttf");
+    font-style: italic;
+    font-weight: 700;
+}
+
+/* Xscale Font Definitions */
+@font-face {
+    font-family: Xscale;
+    src: url("../fonts/Xscale.ttf");
+    font-weight: 600;
+}
+
+h1 {
+    font-size: 2.4rem;
+    font-weight: 500;
+}
+
+h2 {
+    font-size: 1.8rem;
+    font-weight: 500;
+}
+
+h3 {
+    font-size: 1.4rem;
+    font-weight: 500;
+}
+
+p {
+    color: var(--color-dark-variant);
+}
+
+b {
+    color: var(--color-dark);
+}
+
+.text-muted {
+    color: var(--color-info-dark);
+}
+
+.primary {
+    color: var(--color-primary);
+}
+
+.danger {
+    color: var(--color-danger);
+}
+
+.success {
+    color: var(--color-success);
+}
+
+.warning {
+    color: var(--color-warning);
+}

@@ -1,0 +1,36 @@
+/*
+|--------------------------------------------------
+| Creme Frontend Utilities -- Variables
+|--------------------------------------------------
+*/
+
+:root {
+    //** Primary Colors **//
+    --color-tan: rgb(251, 183, 138);
+    --color-red: rgb(255, 30, 124);
+}
+
+//** Circle Sizes **//
+$circle-xsmall: 0.8rem;
+$circle-small: 1.2rem;
+$circle-medium: 1.8rem;
+$circle-large: 2.4rem;
+$circle-xlarge: 3.2rem;
+
+@media screen and (min-width: 410px) {
+    //** Circle Sizes **//
+    $circle-xsmall: 1.4rem;
+    $circle-small: 2rem;
+    $circle-medium: 2.8rem;
+    $circle-large: 4rem;
+    $circle-xlarge: 5.4rem;
+}
+
+// @media screen and (min-width: 820px) {
+//     //** Circle Sizes **//
+//     $circle-xsmall: 1.8rem;
+//     $circle-small: 4.4rem;
+//     $circle-medium: 5.6rem;
+//     $circle-large: 6.8rem;
+//     $circle-xlarge: 8.4rem;
+// }

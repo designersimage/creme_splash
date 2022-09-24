@@ -1,0 +1,234 @@
+/*
+|--------------------------------------------------
+| Creme Frontend Layout -- Header
+|--------------------------------------------------
+*/
+
+header.main-header {
+    height: fit-content;
+    position: relative;
+    width: 100%;
+
+    &::before {
+        background-color: var(--color-red);
+        content: '';
+        display: block;
+        height: 3rem;
+        width: 100%;
+    }
+
+    img {
+        width: 100%;
+        z-index: -1;
+    }
+
+    .container {
+        align-items: flex-start;
+        display: flex;
+        inset: 0;
+        padding: 1rem;
+        position: absolute;
+        width: 100%;
+
+        img.icon {
+            width: 4rem;
+            z-index: 1;
+        }
+    }
+}
+
+@media screen and (min-width: 360px) {
+    header.main-header {
+        &::before {
+            height: 4rem;
+        }
+
+        img {
+            margin-top: -0.1rem;
+        }
+
+        .container {
+            padding: 1.4rem;
+    
+            img.icon {
+                width: 4.4rem;
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 410px) {
+    header.main-header {
+        &::before {
+            height: 5rem;
+        }
+        .container {
+            padding: 1.4rem;
+    
+            img.icon {
+                width: 5.6rem;
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 540px) {
+    header.main-header {
+        &::before {
+            height: 3rem;
+        }
+
+        img {
+            margin-top: -0.1rem;
+        }
+
+        .container {
+            padding: 1.8rem;
+    
+            img.icon {
+                width: 5.6rem;
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 600px) {
+    header.main-header {
+        &::before {
+            height: 3rem;
+        }
+
+        img {
+            margin-top: -0.1rem;
+        }
+
+        .container {
+            padding: 2.1rem;
+    
+            img.icon {
+                width: 7.4rem;
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 820px) {
+    header.main-header {
+        &::before {
+            height: 3rem;
+        }
+
+        img {
+            margin-top: -0.1rem;
+        }
+
+        .container {
+            padding: 2.1rem;
+    
+            img.icon {
+                width: 9.2rem;
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    header.main-header {
+        &::before {
+            height: 3rem;
+        }
+
+        img {
+            margin-top: -0.1rem;
+        }
+
+        .container {
+            padding: 2.4rem;
+    
+            img.icon {
+                width: 11rem;
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 1280px) {
+    header.main-header {
+        &::before {
+            height: 0rem;
+        }
+
+        img {
+            margin-top: -0.1rem;
+        }
+
+        .container {
+            padding: 2.1rem;
+    
+            img.icon {
+                width: 14rem;
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 1280px) {
+    header.main-header {
+        &::before {
+            height: 0rem;
+        }
+
+        img {
+            margin-top: -1rem;
+        }
+
+        .container {
+            padding: 3.1rem 2.1rem 2.1rem 2.1rem;
+    
+            img.icon {
+                width: 14rem;
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 1600px) {
+    header.main-header {
+        &::before {
+            height: 0rem;
+        }
+
+        img {
+            margin-top: -1rem;
+        }
+
+        .container {
+            padding: 3.1rem 4.2rem 2.1rem 4.2rem;
+    
+            img.icon {
+                margin-top: 1rem;
+                width: 14rem;
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 1920px) {
+    header.main-header {
+        &::before {
+            height: 0rem;
+        }
+
+        img {
+            margin-top: -3rem;
+        }
+
+        .container {
+            padding: 5.1rem 6.6rem 2.1rem 6.6rem;
+    
+            img.icon {
+                width: 15rem;
+            }
+        }
+    }
+}

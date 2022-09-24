@@ -1,0 +1,1972 @@
+/*
+|--------------------------------------------------
+| Creme Frontend Pages -- Home
+|--------------------------------------------------
+*/
+
+#home {
+    align-items: flex-start;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    width: 100%;
+
+    .hero {
+        margin-top: -3rem;
+        position: relative;
+        width: 100%;
+
+        &::after {
+            background-color: var(--color-red);
+            content: '';
+            display: block;
+            height: 6rem;
+            margin-top: -5rem;
+            width: 100%;
+        }
+
+        img.hero-bottom {
+            bottom: 5.8rem;
+            position: absolute;
+            width: calc(100% + 1px);
+            z-index: 0;
+        }
+    
+        .container {
+            display: flex;
+            flex-direction: column;
+            padding: 1rem;
+            width: 100%;
+            
+            .hero-logo {
+                align-items: flex-start;
+                display: flex;
+                height: fit-content;
+                justify-content: center;
+                margin: 0;
+                z-index: 1;
+
+                img {
+                    width: 70%;
+                }
+            }
+
+            .hero-product {
+                align-items: flex-start;
+                display: flex;
+                justify-content: center;
+                margin-top: -3rem;
+                position: relative;
+
+                .bg-circle {
+                    background-color: var(--color-red);
+                    border-radius: 50%;
+                    height: 55vw;
+                    position: absolute;
+                    width: 55vw;
+                    top: -0.5rem;
+                    z-index: 0;
+                }
+
+                .product-display {
+                    display: flex;
+                    padding-top: 1.7rem;
+                    width: 100%;
+                    z-index: 1;
+
+                    .left {
+                        align-items: center;
+                        display: flex;
+                        flex: 1;
+                        justify-content: center;
+                        margin-left: -1rem;
+                        padding-bottom: 1.5rem;
+
+                        img {
+                            width: 5rem;
+                        }
+                    }
+                    .middle {
+                        align-items: flex-start;
+                        display: flex;
+                        flex: 5;
+                        justify-content: center;
+                        position: relative;
+                        z-index: 1;
+
+                        img {
+                            width: 100%;
+                            z-index: 1;
+                        }
+
+                        .product-info {
+                            align-items: center;
+                            bottom: -2.1rem;
+                            color: white;
+                            display: flex;
+                            gap: 0.2rem;
+                            position: absolute;
+                            right: -3.8rem;
+
+                            .volume {
+                                font-family: 'Comfortaa', Verdana, Geneva, Tahoma, sans-serif;
+                                text-align: center;
+
+                                strong {
+                                    display: block;
+                                    font-size: 2.8rem;
+                                    font-weight: 600;
+                                    line-height: 2.4rem;
+                                    transform: scaleX(0.83);
+                                }
+                                span {
+                                    display: block;
+                                    font-size: 0.8rem;
+                                    font-weight: 600;
+                                }
+                            }
+
+                            .description {
+                                font-size: 0.8rem;
+                                font-weight: bold;
+                                text-align: center;
+                                text-transform: uppercase;
+
+                                span {
+                                    display: block;
+                                }
+                            }
+                        }
+                    }
+                    .right {
+                        align-items: center;
+                        display: flex;
+                        flex: 1;
+                        justify-content: center;
+                        margin-right: -1rem;
+                        padding-bottom: 1.5rem;
+
+                        img {
+                            width: 5rem;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .pink-container {
+        background-color: var(--color-red);
+        color: white;
+        display: flex;
+        flex-direction: column;
+        margin-top: -.5rem;
+        padding: .5rem 0;
+        width: 100%;
+
+        .products {
+            flex: 1;
+    
+            .delicious-flavors {
+                font-size: 3.2rem;
+                text-align: center;
+    
+                span {
+                    display:block;
+                    font-family: 'Pacifico', 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+                }
+    
+                strong {
+                    display: block;
+                    text-transform: uppercase;
+                }
+            }
+    
+            .product-listing {
+                list-style: none;
+                padding: 1.4rem;
+                padding-top: 0;
+    
+                li {
+                    align-items: flex-start;
+                    gap: 1.4rem;
+                    display: flex;
+                    margin-bottom: 3.2rem;
+                    width: 100%;
+    
+                    .image {
+                        img {
+                            grid-area: image;
+                            width: 5rem;
+                        }
+                    }
+                    .content {
+                        align-items: flex-start;
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: flex-start;
+    
+                        h3 {
+                            font-family: 'Pacifico', 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+                            font-size: 2.1rem;
+                            margin: 0;
+                            padding: 0 0 0.6rem 0;
+                        }
+        
+                        p {
+                            font-size: 1.05rem;
+                            margin: 0;
+                        }
+                    }
+                }
+            }
+        }
+        
+        .about {
+            background-color: var(--color-red);
+            color: white;
+            flex: 1;
+            padding: 1.4rem;
+            position: relative;
+            text-align: center;
+            width: 100%;
+    
+            .info {
+                align-items: center;
+                display: flex;
+                flex-direction: column;
+                justify-content: flex-start;
+                width: 100%;
+    
+                img {
+                    width: 60%;
+                }
+    
+                p {
+                    font-size: 1rem;
+                    line-height: 2;
+                    padding: 0 2.8rem;
+                    
+                    strong {
+                        display: block;
+                    }
+                }
+            }
+    
+            .available {
+                align-items: center;
+                display: flex;
+                flex-direction: column;
+                font-family: 'Xscale',Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+                justify-content: flex-start;
+                text-transform: uppercase;
+    
+                img {
+                    width: 40%;
+                }
+    
+                span {
+                    font-size: 2.4rem;
+                    padding: 1.4rem 0;
+                }
+            }
+            .circle {
+                border-radius: 50%;
+                position: absolute;
+            }
+    
+            .circle-1 {
+                background-color: var(--color-tan);
+                height: $circle-small;
+                left: 14.5%;
+                width: $circle-small;
+                top: 64%;
+            }
+            .circle-2 {
+                background-color: white;
+                height: $circle-small;
+                left: 25%;
+                width: $circle-small;
+                top: 52%;
+            }
+            .circle-3 {
+                background-color: var(--color-tan);
+                height: $circle-large;
+                left: 9%;
+                width: $circle-large;
+                top: 35.5%;
+            }
+            .circle-4 {
+                background-color: white;
+                height: $circle-medium;
+                left: 5%;
+                width: $circle-medium;
+                top: 12.5%;
+            }
+            .circle-5 {
+                background-color: var(--color-tan);
+                height: $circle-xlarge;
+                left: 17%;
+                width: $circle-xlarge;
+                top: -6%;
+            }
+            .circle-6 {
+                background-color: white;
+                height: $circle-xsmall;
+                left: 47%;
+                width: $circle-xsmall;
+                top: -4%;
+            }
+            .circle-7 {
+                background-color: var(--color-tan);
+                height: $circle-small;
+                right: 18%;
+                width: $circle-small;
+                top: -2.5%;
+            }
+            .circle-8 {
+                background-color: white;
+                height: $circle-large;
+                right: 11%;
+                width: $circle-large;
+                top: 16.5%;
+            }
+            .circle-9 {
+                background-color: white;
+                height: $circle-medium;
+                right: 9%;
+                width: $circle-medium;
+                top: 43%;
+            }
+            .circle-10 {
+                background-color: var(--color-tan);
+                height: $circle-xlarge;
+                right: 17%;
+                width: $circle-xlarge;
+                top: 56%;
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 360px) {
+    #home {
+        .hero {
+            &::after {
+                height: 8rem;
+                margin-top: -7rem;
+            }
+
+            img.hero-bottom {
+                bottom: 7.8rem;
+            }
+
+            .container {
+                .hero-product {
+                    .bg-circle {
+                        height: 60vw;
+                        width: 60vw;
+                        top: -1.8rem;
+                    }
+
+                    .product-display {
+                        padding-top: 1.2rem;
+    
+                        .left {
+                            margin-left: -0.5rem;
+                            padding-bottom: 1.5rem;
+    
+                            img {
+                                width: 5rem;
+                            }
+                        }
+                        .middle {
+                            
+                            img {
+                                width: 100%;
+                            }
+    
+                            .product-info {
+                                bottom: -2.1rem;
+                                gap: 0.2rem;
+                                right: -3.2rem;
+    
+                                .volume {
+                                    strong {
+                                        font-size: 3.2rem;
+                                        line-height: 2.8rem;
+                                    }
+                                    span {
+                                        font-size: 1rem;
+                                    }
+                                }
+    
+                                .description {
+                                    font-size: 1rem;
+                                }
+                            }
+                        }
+                        .right {
+                            margin-right: -0.5rem;
+                            padding-bottom: 1.5rem;
+    
+                            img {
+                                width: 5rem;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+        .pink-container {
+            .products {
+                padding: 1.4rem 0 0.5rem 0;
+        
+                .delicious-flavors {
+                    font-size: 3.6rem;
+                }
+        
+                .product-listing {
+                    padding: 3.2rem;
+                    padding-top: 0;
+        
+                    li {
+                        align-items: flex-start;
+                        gap: 1.8rem;
+                        margin-bottom: 3.6rem;
+        
+                        .image {
+                            img {
+                                grid-area: image;
+                                width: 5.25rem;
+                            }
+                        }
+                        .content {
+                            h3 {
+                                font-size: 2.4rem;
+                                padding: 0 0 0.8rem 0;
+                            }
+            
+                            p {
+                                font-size: 1.1rem;
+                            }
+                        }
+                    }
+                }
+            }
+    
+            .about {
+                padding: 2.8rem;
+        
+                .info {
+                    img {
+                        width: 65%;
+                    }
+        
+                    p {
+                        font-size: 1.1rem;
+                        line-height: 2;
+                        padding: 0 2.8rem;
+                    }
+                }
+        
+                .available {
+                    margin-top: 2rem;
+    
+                    img {
+                        width: 45%;
+                    }
+        
+                    span {
+                        font-size: 3.2rem;
+                        padding: 1.4rem 0;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 410px) {
+    #home {
+        .hero {
+            &::after {
+                height: 8rem;
+                margin-top: -7rem;
+            }
+
+            img.hero-bottom {
+                bottom: 7.8rem;
+            }
+
+            .container {
+                .hero-product {
+                    .bg-circle {
+                        height: 62vw;
+                        width: 62vw;
+                        top: -2.2rem;
+                    }
+
+                    .product-display {
+                        padding-top: 1rem;
+    
+                        .left {
+                            margin: 0 -0.5rem;
+                            padding-bottom: 0.4rem;
+    
+                            img {
+                                width: 6rem;
+                            }
+                        }
+                        .middle {
+                            
+                            img {
+                                width: 100%;
+                            }
+    
+                            .product-info {
+                                bottom: -3rem;
+                                gap: 0.2rem;
+                                right: -4.2rem;
+    
+                                .volume {
+                                    strong {
+                                        font-size: 4.2rem;
+                                        line-height: 3.8rem;
+                                    }
+                                    span {
+                                        font-size: 1.2rem;
+                                    }
+                                }
+    
+                                .description {
+                                    font-size: 1.2rem;
+                                }
+                            }
+                        }
+                        .right {
+                            margin: 0 -0.5rem 0 0;
+                            padding-bottom: 0.4rem;
+    
+                            img {
+                                width: 6rem;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+        .pink-container {
+            .products {
+                padding: 2.4rem 0 0.5rem 0;
+        
+                .delicious-flavors {
+                    font-size: 4.2rem;
+                }
+        
+                .product-listing {
+                    padding: 3.2rem;
+                    padding-top: 0;
+        
+                    li {
+                        align-items: flex-start;
+                        gap: 2.4rem;
+                        margin-bottom: 3.6rem;
+        
+                        .image {
+                            img {
+                                grid-area: image;
+                                width: 6rem;
+                            }
+                        }
+                        .content {
+                            h3 {
+                                font-size: 3.2rem;
+                                padding: 0 0 1.4rem 0;
+                            }
+            
+                            p {
+                                font-size: 1.3rem;
+                            }
+                        }
+                    }
+                }
+            }
+    
+            .about {
+                padding: 2.8rem;
+        
+                .info {
+                    img {
+                        width: 65%;
+                    }
+        
+                    p {
+                        font-size: 1.4rem;
+                        line-height: 2;
+                        padding: 0 2.8rem;
+                    }
+                }
+        
+                .available {
+                    margin-top: 2rem;
+    
+                    img {
+                        width: 50%;
+                    }
+        
+                    span {
+                        font-size: 3.8rem;
+                        padding: 1.4rem 0;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 540px) {
+    #home {
+        .hero {
+            margin-top: -5rem;
+
+            &::after {
+                height: 8rem;
+                margin-top: -7rem;
+            }
+
+            img.hero-bottom {
+                bottom: 7.8rem;
+            }
+
+            .container {
+                .hero-logo {
+                    img {
+                        width: 60%;
+                    }
+                }
+
+                .hero-product {
+                    .bg-circle {
+                        height: 50vw;
+                        width: 50vw;
+                        top: -4.2rem;
+                    }
+
+                    .product-display {
+                        padding-top: 1rem;
+    
+                        .left {
+                            margin: 0 -0.5rem;
+                            padding-bottom: 0rem;
+    
+                            img {
+                                width: 9rem;
+                            }
+                        }
+                        .middle {
+                            
+                            img {
+                                width: 100%;
+                            }
+    
+                            .product-info {
+                                bottom: -3rem;
+                                gap: 1rem;
+                                right: -2.2rem;
+    
+                                .volume {
+                                    strong {
+                                        font-size: 4.2rem;
+                                        line-height: 3.8rem;
+                                    }
+                                    span {
+                                        font-size: 1.2rem;
+                                    }
+                                }
+    
+                                .description {
+                                    font-size: 1.2rem;
+                                }
+                            }
+                        }
+                        .right {
+                            margin: 0 -0.5rem 0 0;
+                            padding-bottom: 0rem;
+    
+                            img {
+                                width: 9rem;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+        .pink-container {
+            .products {
+                padding: 2.4rem 0 0.5rem 0;
+        
+                .delicious-flavors {
+                    font-size: 4.2rem;
+                }
+        
+                .product-listing {
+                    padding: 0 6.4rem 6.4rem;
+        
+                    li {
+                        align-items: flex-start;
+                        gap: 2.4rem;
+                        margin-bottom: 3.6rem;
+        
+                        .image {
+                            img {
+                                grid-area: image;
+                                width: 6rem;
+                            }
+                        }
+                        .content {
+                            h3 {
+                                font-size: 3.2rem;
+                                padding: 0 0 1.4rem 0;
+                            }
+            
+                            p {
+                                font-size: 1.3rem;
+                            }
+                        }
+                    }
+                }
+            }
+    
+            .about {
+                padding: 2.8rem;
+        
+                .info {
+                    img {
+                        width: 65%;
+                    }
+        
+                    p {
+                        font-size: 1.4rem;
+                        line-height: 2;
+                        padding: 0 2.8rem;
+                    }
+                }
+        
+                .available {
+                    margin-top: 2rem;
+    
+                    img {
+                        width: 30%;
+                    }
+        
+                    span {
+                        font-size: 3.8rem;
+                        padding: 1.4rem 0;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 600px) {
+    #home {
+        .hero {
+            margin-top: -10rem;
+
+            &::after {
+                height: 8rem;
+                margin-top: -10rem;
+            }
+
+            img.hero-bottom {
+                bottom: 7.8rem;
+            }
+
+            .container {
+                .hero-logo {
+                    img {
+                        width: 50%;
+                    }
+                }
+
+                .hero-product {
+                    .bg-circle {
+                        height: 40vw;
+                        width: 40vw;
+                        top: -6.2rem;
+                    }
+
+                    .product-display {
+                        padding-top: 0rem;
+    
+                        .left {
+                            margin: 0 1.2rem;
+                            padding-bottom: 8rem;
+    
+                            img {
+                                width: 15rem;
+                            }
+                        }
+                        .middle {
+                            
+                            img {
+                                width: 100%;
+                            }
+    
+                            .product-info {
+                                bottom: -3rem;
+                                gap: 1rem;
+                                right: -.6rem;
+    
+                                .volume {
+                                    strong {
+                                        font-size: 4.2rem;
+                                        line-height: 3.8rem;
+                                    }
+                                    span {
+                                        font-size: 1.2rem;
+                                    }
+                                }
+    
+                                .description {
+                                    font-size: 1.2rem;
+                                }
+                            }
+                        }
+                        .right {
+                            margin: 0 1.2rem 0 0;
+                            padding-bottom: 8rem;
+    
+                            img {
+                                width: 15rem;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+        .pink-container {
+            flex-direction: row;
+
+            .products {
+                margin-top: -0.5rem;
+                padding: 2.4rem 0 0.5rem 0;
+        
+                .delicious-flavors {
+                    font-size: 3.6rem;
+                }
+        
+                .product-listing {
+                    padding: 0 3.2rem 3.2rem;
+        
+                    li {
+                        align-items: flex-start;
+                        gap: 2.4rem;
+                        margin-bottom: 3.6rem;
+        
+                        .image {
+                            img {
+                                grid-area: image;
+                                width: 6rem;
+                            }
+                        }
+                        .content {
+                            h3 {
+                                font-size: 2.4rem;
+                                padding: 0 0 1.4rem 0;
+                            }
+            
+                            p {
+                                font-size: 1.2rem;
+                            }
+                        }
+                    }
+                }
+            }
+    
+            .about {
+                height: fit-content;
+                margin-top: 17.5rem;
+                padding: 2.8rem;
+        
+                .info {
+                    img {
+                        width: 65%;
+                    }
+        
+                    p {
+                        font-size: 1.4rem;
+                        line-height: 2;
+                        padding: 0 2.8rem;
+                    }
+                }
+        
+                .available {
+                    margin-top: 2rem;
+    
+                    img {
+                        width: 50%;
+                    }
+        
+                    span {
+                        font-size: 3.8rem;
+                        padding: 1.4rem 0;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 820px) {
+    #home {
+        .hero {
+            .container {
+                .hero-product {
+                    .product-display {
+                        .middle {
+                            .product-info {
+                                bottom: -3rem;
+                                gap: 1rem;
+                                right: -.6rem;
+    
+                                .volume {
+                                    strong {
+                                        font-size: 4.8rem;
+                                        line-height: 4.8rem;
+                                    }
+                                    span {
+                                        font-size: 1.4rem;
+                                    }
+                                }
+    
+                                .description {
+                                    font-size: 1.4rem;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+        .pink-container {
+            .products {
+                margin-top: -3.5rem;
+            }
+
+            .about {
+                margin-top: 17.5rem;
+                padding: 2.8rem;
+        
+                .info {
+                    img {
+                        width: 65%;
+                    }
+        
+                    p {
+                        font-size: 1.6rem;
+                        line-height: 2.5;
+                        padding: 0 2.8rem;
+                    }
+                }
+        
+                .available {
+                    margin-top: 2rem;
+    
+                    img {
+                        width: 50%;
+                    }
+        
+                    span {
+                        font-size: 3.8rem;
+                        padding: 1.4rem 0;
+                    }
+                }
+
+                .circle-1 {
+                    background-color: var(--color-tan);
+                    height: 2rem;
+                    left: 14.5%;
+                    width: 2rem;
+                    top: 64%;
+                }
+                .circle-2 {
+                    background-color: white;
+                    height: 2rem;
+                    left: 25%;
+                    width: 2rem;
+                    top: 52%;
+                }
+                .circle-3 {
+                    background-color: var(--color-tan);
+                    height: 4rem;
+                    left: 9%;
+                    width: 4rem;
+                    top: 35.5%;
+                }
+                .circle-4 {
+                    background-color: white;
+                    height: 2.8rem;
+                    left: 5%;
+                    width: 2.8rem;
+                    top: 12.5%;
+                }
+                .circle-5 {
+                    background-color: var(--color-tan);
+                    height: 5.4rem;
+                    left: 17%;
+                    width: 5.4rem;
+                    top: -6%;
+                }
+                .circle-6 {
+                    background-color: white;
+                    height: 1.4rem;
+                    left: 47%;
+                    width: 1.4rem;
+                    top: -4%;
+                }
+                .circle-7 {
+                    background-color: var(--color-tan);
+                    height: 2rem;
+                    right: 18%;
+                    width: 2rem;
+                    top: -2.5%;
+                }
+                .circle-8 {
+                    background-color: white;
+                    height: 4rem;
+                    right: 11%;
+                    width: 4rem;
+                    top: 16.5%;
+                }
+                .circle-9 {
+                    background-color: white;
+                    height: 2.8rem;
+                    right: 9%;
+                    width: 2.8rem;
+                    top: 43%;
+                }
+                .circle-10 {
+                    background-color: var(--color-tan);
+                    height: 5.4rem;
+                    right: 17%;
+                    width: 5.4rem;
+                    top: 56%;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    #home {
+        .hero {
+            margin-top: -15rem;
+
+            &::after {
+                height: 8rem;
+                margin-top: -10rem;
+            }
+
+            img.hero-bottom {
+                bottom: 7.8rem;
+            }
+
+            .container {
+                .hero-logo {
+                    img {
+                        width: 50%;
+                    }
+                }
+
+                .hero-product {
+                    .bg-circle {
+                        height: 40vw;
+                        width: 40vw;
+                        top: -6.2rem;
+                    }
+
+                    .product-display {
+                        padding-top: 0rem;
+    
+                        .left {
+                            margin: 0 3.2rem;
+                            padding-bottom: 8rem;
+    
+                            img {
+                                width: 19rem;
+                            }
+                        }
+                        .middle {
+                            
+                            img {
+                                width: 100%;
+                            }
+    
+                            .product-info {
+                                bottom: -3.2rem;
+                                gap: 1rem;
+                                right: -1.8rem;
+    
+                                .volume {
+                                    strong {
+                                        font-size: 5.6rem;
+                                        line-height: 5.6rem;
+                                    }
+                                    span {
+                                        font-size: 1.8rem;
+                                    }
+                                }
+    
+                                .description {
+                                    font-size: 1.8rem;
+                                }
+                            }
+                        }
+                        .right {
+                            margin: 0 3.2rem 0 0;
+                            padding-bottom: 8rem;
+    
+                            img {
+                                width: 19rem;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+        .pink-container {
+            .products {
+                margin-top: -4rem;
+                padding: 2.4rem 0 0.5rem 0;
+        
+                .delicious-flavors {
+                    font-size: 4.8rem;
+                }
+        
+                .product-listing {
+                    padding: 0 3.2rem 3.2rem;
+        
+                    li {
+                        align-items: flex-start;
+                        gap: 2.4rem;
+                        margin-bottom: 3.6rem;
+        
+                        .image {
+                            img {
+                                grid-area: image;
+                                width: 6rem;
+                            }
+                        }
+                        .content {
+                            h3 {
+                                font-size: 3.2rem;
+                                padding: 0 0 1.4rem 0;
+                            }
+            
+                            p {
+                                font-size: 1.4rem;
+                            }
+                        }
+                    }
+                }
+            }
+    
+            .about {
+                height: fit-content;
+                margin-top: 17.5rem;
+                padding: 2.8rem;
+        
+                .info {
+                    img {
+                        width: 65%;
+                    }
+        
+                    p {
+                        font-size: 1.8rem;
+                        line-height: 2.5;
+                        padding: 0 2.8rem;
+                    }
+                }
+        
+                .available {
+                    margin-top: 2rem;
+    
+                    img {
+                        width: 50%;
+                    }
+        
+                    span {
+                        font-size: 3.8rem;
+                        padding: 1.4rem 0;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 1280px) {
+    #home {
+        .hero {
+            margin-top: -22rem;
+
+            &::after {
+                height: 2rem;
+                margin-top: -4rem;
+            }
+
+            img.hero-bottom {
+                bottom: 1.8rem;
+            }
+
+            .container {
+                .hero-logo {
+                    img {
+                        width: 32%;
+                    }
+                }
+
+                .hero-product {
+                    .bg-circle {
+                        height: 30vw;
+                        width: 30vw;
+                        top: -6.2rem;
+                    }
+
+                    .product-display {
+                        padding-top: 0rem;
+    
+                        .left {
+                            margin: 0 3.2rem 0 15rem;
+                            padding-bottom: 8rem;
+    
+                            img {
+                                width: 18rem;
+                            }
+                        }
+                        .middle {
+                            
+                            img {
+                                width: 90%;
+                            }
+    
+                            .product-info {
+                                bottom: -3.2rem;
+                                gap: 1rem;
+                                right: 2rem;
+    
+                                .volume {
+                                    strong {
+                                        font-size: 4.8rem;
+                                        line-height: 4.8rem;
+                                    }
+                                    span {
+                                        font-size: 1.4rem;
+                                    }
+                                }
+    
+                                .description {
+                                    font-size: 1.4rem;
+                                }
+                            }
+                        }
+                        .right {
+                            margin: 0 15rem 0 3.2rem;
+                            padding-bottom: 8rem;
+    
+                            img {
+                                width: 18rem;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+        .pink-container {
+            gap: 4rem;
+            padding: 4rem;
+
+            .products {
+                margin-top: 0rem;
+                padding: 2.4rem 0 0.5rem 0;
+        
+                .delicious-flavors {
+                    font-size: 4.2rem;
+                }
+        
+                .product-listing {
+                    padding: 0 3.2rem 3.2rem;
+        
+                    li {
+                        align-items: flex-start;
+                        gap: 2.4rem;
+                        margin-bottom: 3.6rem;
+        
+                        .image {
+                            img {
+                                grid-area: image;
+                                width: 6rem;
+                            }
+                        }
+                        .content {
+                            h3 {
+                                font-size: 3.2rem;
+                                padding: 0 0 1.4rem 0;
+                            }
+            
+                            p {
+                                font-size: 1.4rem;
+                            }
+                        }
+                    }
+                }
+            }
+    
+            .about {
+                height: fit-content;
+                margin-top: 12rem;
+                padding: 2.8rem;
+        
+                .info {
+                    img {
+                        width: 50%;
+                    }
+        
+                    p {
+                        font-size: 1.4rem;
+                        line-height: 2;
+                        padding: 0 2.8rem;
+                    }
+                }
+        
+                .available {
+                    margin-top: 2rem;
+    
+                    img {
+                        width: 35%;
+                    }
+        
+                    span {
+                        font-size: 3.8rem;
+                        padding: 1.4rem 0;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 1360px) {
+    #home {
+        .hero {
+            margin-top: -25rem;
+
+            &::after {
+                height: 0rem;
+                margin-top: -2rem;
+            }
+
+            img.hero-bottom {
+                bottom: 0rem;
+            }
+
+            .container {
+                .hero-logo {
+                    img {
+                        width: 32%;
+                    }
+                }
+
+                .hero-product {
+                    .bg-circle {
+                        height: 25vw;
+                        width: 25vw;
+                        top: -6.2rem;
+                    }
+
+                    .product-display {
+                        padding-top: 0rem;
+    
+                        .left {
+                            margin: 0 3.2rem 0 20rem;
+                            padding-bottom: 8rem;
+    
+                            img {
+                                width: 20rem;
+                            }
+                        }
+                        .middle {
+                            
+                            img {
+                                width: 90%;
+                            }
+    
+                            .product-info {
+                                bottom: -3.2rem;
+                                gap: 1rem;
+                                right: 2rem;
+    
+                                .volume {
+                                    strong {
+                                        font-size: 4.8rem;
+                                        line-height: 4.8rem;
+                                    }
+                                    span {
+                                        font-size: 1.4rem;
+                                    }
+                                }
+    
+                                .description {
+                                    font-size: 1.4rem;
+                                }
+                            }
+                        }
+                        .right {
+                            margin: 0 20rem 0 3.2rem;
+                            padding-bottom: 8rem;
+    
+                            img {
+                                width: 20rem;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+        .pink-container {
+            gap: 4rem;
+            padding: 4rem;
+
+            .products {
+                margin-top: -1rem;
+                padding: 2.4rem 0 0.5rem 0;
+        
+                .delicious-flavors {
+                    font-size: 4.2rem;
+                }
+        
+                .product-listing {
+                    padding: 0 3.2rem 3.2rem;
+        
+                    li {
+                        align-items: flex-start;
+                        gap: 2.4rem;
+                        margin-bottom: 3.6rem;
+        
+                        .image {
+                            img {
+                                grid-area: image;
+                                width: 6rem;
+                            }
+                        }
+                        .content {
+                            h3 {
+                                font-size: 3.2rem;
+                                padding: 0 0 1.4rem 0;
+                            }
+            
+                            p {
+                                font-size: 1.4rem;
+                            }
+                        }
+                    }
+                }
+            }
+    
+            .about {
+                height: fit-content;
+                margin-top: 12rem;
+                padding: 2.8rem;
+        
+                .info {
+                    img {
+                        width: 50%;
+                    }
+        
+                    p {
+                        font-size: 1.4rem;
+                        line-height: 2;
+                        padding: 0 2.8rem;
+                    }
+                }
+        
+                .available {
+                    margin-top: 2rem;
+    
+                    img {
+                        width: 35%;
+                    }
+        
+                    span {
+                        font-size: 3.8rem;
+                        padding: 1.4rem 0;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 1440px) {
+    #home {
+        .hero {
+            margin-top: -20rem;
+
+            img.hero-bottom {
+                bottom: 0rem;
+            }
+
+            .container {
+                .hero-logo {
+                    img {
+                        width: 27%;
+                    }
+                }
+
+                .hero-product {
+                    .bg-circle {
+                        height: 22vw;
+                        width: 22vw;
+                        top: -6.2rem;
+                    }
+
+                    .product-display {
+                        padding-top: 0rem;
+    
+                        .left {
+                            margin: 0 6.4rem 0 30rem;
+                            padding-bottom: 8rem;
+    
+                            img {
+                                width: 20rem;
+                            }
+                        }
+                        .middle {
+                            
+                            img {
+                                width: 100%;
+                            }
+    
+                            .product-info {
+                                bottom: -3.2rem;
+                                gap: 1rem;
+                                right: -4rem;
+    
+                                .volume {
+                                    strong {
+                                        font-size: 4.8rem;
+                                        line-height: 4.8rem;
+                                    }
+                                    span {
+                                        font-size: 1.4rem;
+                                    }
+                                }
+    
+                                .description {
+                                    font-size: 1.4rem;
+                                }
+                            }
+                        }
+                        .right {
+                            margin: 0 30rem 0 6.4rem;
+                            padding-bottom: 8rem;
+    
+                            img {
+                                width: 20rem;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        .pink-container {
+            gap: 8rem;
+            padding: 4rem 16rem;
+
+            .products {
+                flex: 1.5;
+                margin-top: -1rem;
+                padding: 2.4rem 0 0.5rem 0;
+        
+                .delicious-flavors {
+                    font-size: 4.2rem;
+                }
+        
+                .product-listing {
+                    padding: 0 3.2rem 3.2rem;
+        
+                    li {
+                        align-items: flex-start;
+                        gap: 2.4rem;
+                        margin-bottom: 3.6rem;
+        
+                        .image {
+                            img {
+                                grid-area: image;
+                                width: 6rem;
+                            }
+                        }
+                        .content {
+                            h3 {
+                                font-size: 3.2rem;
+                                padding: 0 0 1.4rem 0;
+                            }
+            
+                            p {
+                                font-size: 1.4rem;
+                            }
+                        }
+                    }
+                }
+            }
+    
+            .about {
+                height: fit-content;
+                margin-top: 12rem;
+                padding: 2.8rem;
+        
+                .info {
+                    img {
+                        width: 55%;
+                    }
+        
+                    p {
+                        font-size: 1.6rem;
+                        line-height: 2.5;
+                        padding: 0 2.8rem;
+                    }
+                }
+        
+                .available {
+                    margin-top: 2rem;
+    
+                    img {
+                        width: 45%;
+                    }
+        
+                    span {
+                        font-size: 3.8rem;
+                        padding: 1.4rem 0;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 1600px) {
+    #home {
+        .hero {
+            margin-top: -26rem;
+
+            &::after {
+                height: 0rem;
+                margin-top: -2rem;
+            }
+
+            img.hero-bottom {
+                bottom: 0rem;
+            }
+
+            .container {
+                .hero-logo {
+                    img {
+                        width: 32%;
+                    }
+                }
+
+                .hero-product {
+                    .bg-circle {
+                        height: 25vw;
+                        width: 25vw;
+                        top: -6.2rem;
+                    }
+
+                    .product-display {
+                        padding-top: 0rem;
+    
+                        .left {
+                            margin: 0 3.2rem 0 25rem;
+                            padding-bottom: 8rem;
+    
+                            img {
+                                width: 25rem;
+                            }
+                        }
+                        .middle {
+                            
+                            img {
+                                width: 90%;
+                            }
+    
+                            .product-info {
+                                bottom: -3.2rem;
+                                gap: 1rem;
+                                right: 2rem;
+    
+                                .volume {
+                                    strong {
+                                        font-size: 4.8rem;
+                                        line-height: 4.8rem;
+                                    }
+                                    span {
+                                        font-size: 1.4rem;
+                                    }
+                                }
+    
+                                .description {
+                                    font-size: 1.4rem;
+                                }
+                            }
+                        }
+                        .right {
+                            margin: 0 25rem 0 3.2rem;
+                            padding-bottom: 8rem;
+    
+                            img {
+                                width: 25rem;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+        .pink-container {
+            gap: 8rem;
+            padding: 4rem 16rem;
+
+            .products {
+                flex: 1.5;
+                margin-top: -1rem;
+                padding: 2.4rem 0 0.5rem 0;
+        
+                .delicious-flavors {
+                    font-size: 4.2rem;
+                }
+        
+                .product-listing {
+                    padding: 0 3.2rem 3.2rem;
+        
+                    li {
+                        align-items: flex-start;
+                        gap: 2.4rem;
+                        margin-bottom: 3.6rem;
+        
+                        .image {
+                            img {
+                                grid-area: image;
+                                width: 6rem;
+                            }
+                        }
+                        .content {
+                            h3 {
+                                font-size: 3.2rem;
+                                padding: 0 0 1.4rem 0;
+                            }
+            
+                            p {
+                                font-size: 1.4rem;
+                            }
+                        }
+                    }
+                }
+            }
+    
+            .about {
+                height: fit-content;
+                margin-top: 12rem;
+                padding: 2.8rem;
+        
+                .info {
+                    img {
+                        width: 55%;
+                    }
+        
+                    p {
+                        font-size: 1.6rem;
+                        line-height: 2.5;
+                        padding: 0 2.8rem;
+                    }
+                }
+        
+                .available {
+                    margin-top: 2rem;
+    
+                    img {
+                        width: 45%;
+                    }
+        
+                    span {
+                        font-size: 3.8rem;
+                        padding: 1.4rem 0;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 1920px) {
+    #home {
+        .hero {
+            margin-top: -33rem;
+
+            &::after {
+                height: 0rem;
+                margin-top: -2rem;
+            }
+
+            img.hero-bottom {
+                bottom: 0rem;
+            }
+
+            .container {
+                .hero-logo {
+                    img {
+                        width: 27%;
+                    }
+                }
+
+                .hero-product {
+                    .bg-circle {
+                        height: 25vw;
+                        width: 25vw;
+                        top: -6.2rem;
+                    }
+
+                    .product-display {
+                        padding-top: 0rem;
+    
+                        .left {
+                            margin: 0 3.2rem 0 38rem;
+                            padding-bottom: 8rem;
+    
+                            img {
+                                width: 25rem;
+                            }
+                        }
+                        .middle {
+                            
+                            img {
+                                width: 90%;
+                            }
+    
+                            .product-info {
+                                bottom: -3.2rem;
+                                gap: 1rem;
+                                right: 2rem;
+    
+                                .volume {
+                                    strong {
+                                        font-size: 4.8rem;
+                                        line-height: 4.8rem;
+                                    }
+                                    span {
+                                        font-size: 1.4rem;
+                                    }
+                                }
+    
+                                .description {
+                                    font-size: 1.4rem;
+                                }
+                            }
+                        }
+                        .right {
+                            margin: 0 38rem 0 3.2rem;
+                            padding-bottom: 8rem;
+    
+                            img {
+                                width: 25rem;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+        .pink-container {
+            gap: 8rem;
+            padding: 4rem 26rem;
+
+            .products {
+                flex: 1.5;
+                margin-top: -1rem;
+                padding: 2.4rem 0 0.5rem 0;
+        
+                .delicious-flavors {
+                    font-size: 4.2rem;
+                }
+        
+                .product-listing {
+                    padding: 0 3.2rem 3.2rem;
+        
+                    li {
+                        align-items: flex-start;
+                        gap: 2.4rem;
+                        margin-bottom: 3.6rem;
+        
+                        .image {
+                            img {
+                                grid-area: image;
+                                width: 6rem;
+                            }
+                        }
+                        .content {
+                            h3 {
+                                font-size: 3.2rem;
+                                padding: 0 0 1.4rem 0;
+                            }
+            
+                            p {
+                                font-size: 1.4rem;
+                            }
+                        }
+                    }
+                }
+            }
+    
+            .about {
+                height: fit-content;
+                margin-top: 12rem;
+                padding: 2.8rem;
+        
+                .info {
+                    img {
+                        width: 55%;
+                    }
+        
+                    p {
+                        font-size: 1.6rem;
+                        line-height: 2.5;
+                        padding: 0 2.8rem;
+                    }
+                }
+        
+                .available {
+                    margin-top: 2rem;
+    
+                    img {
+                        width: 45%;
+                    }
+        
+                    span {
+                        font-size: 3.8rem;
+                        padding: 1.4rem 0;
+                    }
+                }
+            }
+        }
+    }
+}
