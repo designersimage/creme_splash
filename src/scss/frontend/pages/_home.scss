@@ -257,17 +257,32 @@
                 align-items: center;
                 display: flex;
                 flex-direction: column;
-                font-family: 'Xscale',Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
                 justify-content: flex-start;
-                text-transform: uppercase;
     
                 img {
                     width: 40%;
                 }
     
                 span {
+                    font-family: 'Xscale',Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
                     font-size: 2.4rem;
                     padding: 1.4rem 0;
+                    text-transform: uppercase;
+                }
+
+                a {
+                    border-bottom: solid 2px white;
+                    border-radius: 2px;
+                    color: white;
+                    font-family: 'Pacifico', 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+                    font-size: 2.4rem;
+                    text-decoration: none;
+
+                    &:link, &:hover, &:visited {
+                        color: white;
+                        font-family: 'Pacifico', 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+                        text-decoration: none;
+                    }
                 }
             }
             .circle {
@@ -481,6 +496,10 @@
                     span {
                         font-size: 3.2rem;
                         padding: 1.4rem 0;
+                    }
+
+                    a {
+                        font-size: 3.2rem;
                     }
                 }
             }
