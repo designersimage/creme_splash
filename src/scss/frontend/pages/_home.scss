@@ -779,12 +779,12 @@
             margin-top: -10rem;
 
             &::after {
-                height: 8rem;
-                margin-top: -10rem;
+                height: 6rem;
+                margin-top: -8rem;
             }
 
             img.hero-bottom {
-                bottom: 7.8rem;
+                bottom: 5.8rem;
             }
 
             .container {
@@ -805,23 +805,24 @@
                         padding-top: 0rem;
     
                         .left {
-                            margin: 0 1.2rem;
+                            flex: 3;
+                            margin: 0 auto;
                             padding-bottom: 8rem;
     
                             img {
-                                width: 15rem;
+                                width: 10rem;
                             }
                         }
                         .middle {
-                            
+                            flex: 3;
                             img {
-                                width: 100%;
+                                width: 30rem;
                             }
     
                             .product-info {
                                 bottom: -3rem;
                                 gap: 1rem;
-                                right: -.6rem;
+                                right: -4.2rem;
     
                                 .volume {
                                     strong {
@@ -839,11 +840,12 @@
                             }
                         }
                         .right {
-                            margin: 0 1.2rem 0 0;
+                            flex: 3;
+                            margin: 0 auto;
                             padding-bottom: 8rem;
     
                             img {
-                                width: 15rem;
+                                width: 10rem;
                             }
                         }
                     }
@@ -930,11 +932,18 @@
             .container {
                 .hero-product {
                     .product-display {
+                        .left {
+                            flex: 2;
+                        }
                         .middle {
+                            flex: 4;
+                            img {
+                                width: 100%;
+                            }
                             .product-info {
                                 bottom: -3rem;
                                 gap: 1rem;
-                                right: -.6rem;
+                                right: -3.6rem;
     
                                 .volume {
                                     strong {
@@ -950,6 +959,9 @@
                                     font-size: 1.4rem;
                                 }
                             }
+                        }
+                        .right {
+                            flex: 2;
                         }
                     }
                 }
@@ -1113,7 +1125,7 @@
                             .product-info {
                                 bottom: -3.2rem;
                                 gap: 1rem;
-                                right: -1.8rem;
+                                right: -4.8rem;
     
                                 .volume {
                                     strong {
@@ -1262,7 +1274,7 @@
                             .product-info {
                                 bottom: -3.2rem;
                                 gap: 1rem;
-                                right: 2rem;
+                                right: -1rem;
     
                                 .volume {
                                     strong {
@@ -1414,7 +1426,7 @@
                             .product-info {
                                 bottom: -3.2rem;
                                 gap: 1rem;
-                                right: 2rem;
+                                right: -1rem;
     
                                 .volume {
                                     strong {
@@ -1545,7 +1557,7 @@
                         padding-top: 0rem;
     
                         .left {
-                            margin: 0 6.4rem 0 30rem;
+                            margin: 0 6.4rem 0 17rem;
                             padding-bottom: 8rem;
     
                             img {
@@ -1555,13 +1567,15 @@
                         .middle {
                             
                             img {
-                                width: 100%;
+                                max-width: 60rem;
+                                min-width: 50rem;
+                                width: 50rem;
                             }
     
                             .product-info {
                                 bottom: -3.2rem;
                                 gap: 1rem;
-                                right: -4rem;
+                                right: 0rem;
     
                                 .volume {
                                     strong {
@@ -1579,7 +1593,7 @@
                             }
                         }
                         .right {
-                            margin: 0 30rem 0 6.4rem;
+                            margin: 0 17rem 0 6.4rem;
                             padding-bottom: 8rem;
     
                             img {
